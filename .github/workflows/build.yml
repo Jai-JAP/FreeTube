@@ -96,7 +96,7 @@ jobs:
       
     - name: Build ARM64 with Node.js ${{ matrix.node-version}}
       if: contains(matrix.runtime, 'arm64')
-      run: npm run build:arm64 --if-present
+      run: npm run build:arm64 --if-present && ls ./build/ || dir .\build\
 
     - name: Upload Linux .zip x64 Artifact
       uses: actions/upload-artifact@v2

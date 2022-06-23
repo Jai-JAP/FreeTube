@@ -158,6 +158,7 @@ Settings:
       Dark: 'Escuro'
       Light: 'Claro'
       Dracula: 'Drácula'
+      System Default: Padrão do sistema
     Main Color Theme:
       Main Color Theme: 'Cor principal'
       Red: 'Vermelha'
@@ -226,6 +227,8 @@ Settings:
     Fast-Forward / Rewind Interval: Intervalo de avanço / retrocesso rápido
     Scroll Playback Rate Over Video Player: Rolar a taxa de reprodução sobre o reprodutor
       de vídeo
+    Max Video Playback Rate: Taxa máxima de reprodução de vídeo
+    Video Playback Rate Interval: Intervalo da taxa de reprodução de vídeo
   Subscription Settings:
     Subscription Settings: 'Configurações de inscrições'
     Hide Videos on Watch: 'Esconder vídeos após assisti-los'
@@ -676,6 +679,7 @@ Comments:
   Pinned by: Fixado por
   And others: e outros
   From $channelName: de $channelName
+  Member: Membro
 Up Next: 'Próximo'
 
 # Toast Messages
@@ -698,7 +702,7 @@ Canceled next video autoplay: 'Auto-reprodução foi cancelada para o próximo v
 
 Yes: 'Sim'
 No: 'Não'
-Locale Name: Português (BR)
+Locale Name: português (BR)
 Profile:
   Delete Profile: Deletar Perfil
   Update Profile: Atualizar Perfil

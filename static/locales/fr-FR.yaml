@@ -80,6 +80,7 @@ Subscriptions:
     profil comporte un grand nombre d'abonnements.  Le flux RSS outrepassera la limite
     fixée
   Load More Videos: Charger plus de vidéos
+  Error Channels: Chaînes avec des erreurs
 Trending:
   Trending: 'Tendance'
   Trending Tabs: Onglets des Tendances
@@ -166,6 +167,7 @@ Settings:
       Dark: 'Sombre'
       Light: 'Clair'
       Dracula: 'Dracula'
+      System Default: Paramètres système
     Main Color Theme:
       Main Color Theme: 'Couleur principale du thème'
       Red: 'Rouge'
@@ -239,6 +241,22 @@ Settings:
       lecteur vidéo
     Video Playback Rate Interval: Intervalle de débit de lecture vidéo
     Max Video Playback Rate: Débit de lecture vidéo maximal
+    Screenshot:
+      Enable: Activer les captures d'écran
+      Ask Path: Demander le dossier de sauvegarde
+      Folder Button: Sélectionner un dossier
+      Error:
+        Forbidden Characters: Caractères interdits
+        Empty File Name: Nom de fichier vide
+      File Name Tooltip: Vous pouvez utiliser les variables suivantes. %Y Année 4
+        chiffres. %M Mois 2 chiffres. %D Jour 2 chiffres. %H Heure 2 chiffres. %N
+        Minute 2 chiffres. %S Second 2 chiffres. %T Milliseconde 3 chiffres. %s Video
+        Second. %t Milliseconde vidéo 3 chiffres. %i Video ID. Vous pouvez également
+        utiliser \ ou / pour créer des sous-dossiers.
+      Quality Label: Qualité des captures d'écran
+      Format Label: Format des captures d'écran
+      File Name Label: Modèle de nom de fichier
+      Folder Label: Dossier de capture d'écran
   Subscription Settings:
     Subscription Settings: 'Paramètres des abonnements'
     Hide Videos on Watch: 'Masquer les vidéos visionnées'
@@ -357,6 +375,10 @@ Settings:
     Distraction Free Settings: Mode sans distraction
     Hide Active Subscriptions: Masquer les abonnements actifs
     Hide Playlists: Masquer les listes de lecture
+    Hide Video Description: Masquer la description de la vidéo
+    Hide Comments: Masquer les commentaires
+    Hide Live Streams: Masquer les flux en direct
+    Hide Sharing Actions: Masquer les actions de partage
   The app needs to restart for changes to take effect. Restart and apply change?: L'application
     doit être redémarrée pour que les changements prennent effet. Redémarrer et appliquer
     les changements ?
@@ -384,6 +406,13 @@ Settings:
       (la valeur par défaut est https://sponsor.ajay.app)
     Enable SponsorBlock: Activer SponsorBlock
     SponsorBlock Settings: Paramètres de SponsorBlock
+    Skip Options:
+      Skip Option: Ignorer l'option
+      Auto Skip: Ignorer automatiquement
+      Show In Seek Bar: Afficher dans la barre de recherche
+      Prompt To Skip: Inviter à ignorer
+      Do Nothing: Ne rien faire
+    Category Color: Couleur de la catégorie
   External Player Settings:
     Ignore Unsupported Action Warnings: Ignorer les avertissements concernant les
       actions non prises en charge
@@ -395,6 +424,14 @@ Settings:
     Download Settings: 'Paramètres de téléchargement'
     Ask Download Path: 'Demander l''emplacement de téléchargement'
     Choose Path: 'Choisir l''emplacement'
+    Download Behavior: Comportement de téléchargement
+    Download in app: Télécharger dans l'appli
+    Open in web browser: Ouvrir dans le navigateur web
+  Parental Control Settings:
+    Hide Unsubscribe Button: Masquer le bouton de désabonnement
+    Hide Search Bar: Masquer la barre de recherche
+    Parental Control Settings: Paramètres du contrôle parental
+    Show Family Friendly Only: Afficher uniquement le contenu familial
 About:
   #On About page
   About: 'À propos'
@@ -588,12 +625,14 @@ Video:
   Save Video: Enregistrer la vidéo
   translated from English: traduit de l'anglais
   Sponsor Block category:
-    music offtopic: musique hors sujet
-    interaction: interaction
-    sponsor: sponsor
-    self-promotion: autopromotion
-    outro: outro
-    intro: intro
+    music offtopic: Musique hors sujet
+    interaction: Interaction
+    sponsor: Sponsor
+    self-promotion: Autopromotion
+    outro: Conclusion
+    intro: Intro
+    filler: Bouche-trou
+    recap: Récap
   Skipped segment: Segment ignoré
   External Player:
     playlist: liste de lecture
@@ -710,6 +749,7 @@ Comments:
   From $channelName: de $channelName
   Pinned by: Épinglé par
   And others: et d'autres
+  Member: Membre
 Up Next: 'À suivre'
 
 # Toast Messages
@@ -757,7 +797,7 @@ Profile:
   Edit Profile: Modifier le profil
   Create New Profile: Créer un nouveau profil
   Profile Manager: Gestionnaire de profil
-  All Channels: Tous les canaux
+  All Channels: Tous les chaînes
   Profile Select: Sélection du profil
   Are you sure you want to delete the selected channels?  This will not delete the channel from any other profile.: Êtes-vous
     sûr(e) de vouloir supprimer les chaînes sélectionnées ?  Ceci ne supprimera pas
@@ -871,3 +911,11 @@ Downloading failed: 'Il y a eu un problème lors du téléchargement de $'
 Downloading canceled: 'Le téléchargement est annulé par l''utilisateur'
 Download folder does not exist: 'Le répertoire "$" de téléchargement n''existe pas.
   Mode sans répertoire activé.'
+Screenshot Success: Capture d'écran enregistrée sous « $ »
+Screenshot Error: La capture d'écran a échoué. $
+New Window: Nouvelle fenêtre
+Age Restricted:
+  Type:
+    Video: Vidéo
+    Channel: Chaîne
+  This $contentType is age restricted: Ce $ est soumis à une limite d'âge

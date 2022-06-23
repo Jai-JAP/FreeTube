@@ -74,6 +74,7 @@ Subscriptions:
   This profile has a large number of subscriptions.  Forcing RSS to avoid rate limiting: 这个配置文件有大量订阅。
     强制RSS已防止速率限制
   Load More Videos: 加载更多视频
+  Error Channels: 有错误的频道
 Trending:
   Trending: '热门'
   Trending Tabs: 流行标签
@@ -146,6 +147,7 @@ Settings:
       Dark: '深'
       Light: '浅'
       Dracula: '德古拉'
+      System Default: 系统默认
     Main Color Theme:
       Main Color Theme: '主题色'
       Red: '红'
@@ -214,6 +216,19 @@ Settings:
     Scroll Playback Rate Over Video Player: 滚动调整视频播放器回放速度
     Max Video Playback Rate: 视频最大播放速率
     Video Playback Rate Interval: 视频播放速率间隔
+    Screenshot:
+      Format Label: 截屏格式
+      Quality Label: 截屏质量
+      Ask Path: 询问保存文件夹
+      File Name Label: 文件名模式
+      Error:
+        Forbidden Characters: 禁止的字符
+        Empty File Name: 空文件名
+      Folder Button: 选择文件夹
+      File Name Tooltip: 你可以使用下面的变量。 %Y 年份 4 位数。 %M 月份 2 位数。 %D 天 2 位数。 %H 小时 2 位数。
+        %N 分钟 2 位数。 %S 秒 2 位数。 %T 毫秒 3 位数。 %s 视频秒。 %t 视频毫秒 3 位数。 %i 视频 ID。 你也可以使用“\”或“/”创建子文件夹。
+      Enable: 允许截屏
+      Folder Label: 截屏文件夹
   Subscription Settings:
     Subscription Settings: '订阅设置'
     Hide Videos on Watch: '观看时隐藏视频'
@@ -310,6 +325,10 @@ Settings:
     Distraction Free Settings: 零打扰设置
     Hide Active Subscriptions: 隐藏活跃的订阅
     Hide Playlists: 隐藏播放列表
+    Hide Live Streams: 隐藏直播
+    Hide Sharing Actions: 隐藏分享操作
+    Hide Comments: 隐藏评论
+    Hide Video Description: 隐藏视频描述
   The app needs to restart for changes to take effect. Restart and apply change?: 应用需要重启让修改生效。重启以应用修改？
   Proxy Settings:
     Proxy Protocol: 代理协议
@@ -331,6 +350,13 @@ Settings:
       https://sponsor.ajay.app）
     Enable SponsorBlock: 开启赞助商区域
     SponsorBlock Settings: 赞助商区域设置
+    Skip Options:
+      Auto Skip: 自动跳过
+      Show In Seek Bar: 显示在查找栏中
+      Prompt To Skip: 提示跳过
+      Do Nothing: 什么也不做
+      Skip Option: 跳过选项
+    Category Color: 类别颜色
   External Player Settings:
     Custom External Player Arguments: 定制外部播放器的参数
     Custom External Player Executable: 自定义外部播放器的可执行文件
@@ -341,6 +367,14 @@ Settings:
     Download Settings: 下载设置
     Ask Download Path: 询问下载路径
     Choose Path: 选择路径
+    Download in app: 应用内下载
+    Open in web browser: 在网络浏览器内打开
+    Download Behavior: 下载行为
+  Parental Control Settings:
+    Parental Control Settings: 家长控制设置
+    Show Family Friendly Only: 仅显示“家庭友好”视频
+    Hide Search Bar: 隐藏搜索栏
+    Hide Unsubscribe Button: 隐藏“取消订阅”按钮
 About:
   #On About page
   About: '关于'
@@ -544,6 +578,8 @@ Video:
     music offtopic: 无关音乐
     intro: 介绍
     sponsor: 赞助者
+    recap: 回顾
+    filler: 过滤器
   translated from English: 从英语翻译而来
   Skipped segment: 跳过片段
 Videos:
@@ -616,6 +652,7 @@ Comments:
   Pinned by: 置顶人
   From $channelName: 来自 $channelName
   And others: 及其他
+  Member: 成员
 Up Next: 'Up Next'
 
 # Toast Messages
@@ -724,3 +761,11 @@ Downloading has completed: 已完成下载 “$”
 Starting download: 开始下载“$”
 Downloading canceled: 用户取消了下载
 Download folder does not exist: 下载目录“$”不存在，退回到 “询问文件夹”模式。
+Screenshot Error: 截屏失败。$
+Screenshot Success: 另存截屏为 “$”
+New Window: 新窗口
+Age Restricted:
+  Type:
+    Channel: 频道
+    Video: 视频
+  This $contentType is age restricted: 此 $ 有年龄限制

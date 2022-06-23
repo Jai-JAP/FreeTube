@@ -82,6 +82,7 @@ Subscriptions:
   This profile has a large number of subscriptions.  Forcing RSS to avoid rate limiting: Bu
     profilin çok sayıda abonesi var.  Hız sınırlamalarından kaçınmak için RSS zorlanıyor
   Load More Videos: Daha Fazla Video Yükle
+  Error Channels: Hatalı Kanallar
 Trending:
   Trending: 'Öne Çıkanlar'
   Trending Tabs: Öne Çıkanlar Sekmeleri
@@ -162,6 +163,7 @@ Settings:
       Dark: 'Koyu'
       Light: 'Açık'
       Dracula: 'Drakula'
+      System Default: Sistem Öntanımlı Değeri
     Main Color Theme:
       Main Color Theme: 'Ana Renk Teması'
       Red: 'Kırmızı'
@@ -231,6 +233,22 @@ Settings:
       Hızını Denetle
     Video Playback Rate Interval: Video Oynatma Hızı Aralığı
     Max Video Playback Rate: En Yüksek Video Oynatma Hızı
+    Screenshot:
+      Quality Label: Ekran Görüntüsü Kalitesi
+      Ask Path: Kaydedileceği Klasörü Sor
+      Folder Label: Ekran Görüntüsü Klasörü
+      File Name Label: Dosya Adı Kalıbı
+      Error:
+        Forbidden Characters: Yasak Karakterler
+        Empty File Name: Boş Dosya Adı
+      Format Label: Ekran Görüntüsü Biçimi
+      Enable: Ekran Görüntüsünü Etkinleştir
+      Folder Button: Klasör Seç
+      File Name Tooltip: Aşağıda değişkenleri kullanabilirsiniz. %Y Yıl 4 basamak.
+        %M Ay 2 basamak. %D Gün 2 basamak. %H Saat 2 basamak. %N Dakika 2 basamak.
+        %S Saniye 2 basamak. %T Milisaniye 3 basamak. %s Video Saniyesi. %t Video
+        Milisaniyesi 3 basamak. %i Video Kimliği. Alt klasörler oluşturmak için "\"
+        veya "/" kullanabilirsiniz.
   Privacy Settings:
     Privacy Settings: 'Gizlilik Ayarları'
     Remember History: 'Geçmişi Hatırla'
@@ -339,6 +357,10 @@ Settings:
     Distraction Free Settings: Dikkat Dağıtmama Ayarları
     Hide Active Subscriptions: Etkin Abonelikleri Gizle
     Hide Playlists: Oynatma Listelerini Gizle
+    Hide Live Streams: Canlı Yayınları Gizle
+    Hide Sharing Actions: Paylaşım Eylemlerini Gizle
+    Hide Video Description: Video Açıklamasını Gizle
+    Hide Comments: Yorumları Gizle
   The app needs to restart for changes to take effect. Restart and apply change?: Değişikliklerin
     etkili olması için uygulamanın yeniden başlatılması gerekiyor. Yeniden başlatılsın
     ve değişiklikler uygulansın mı?
@@ -364,6 +386,13 @@ Settings:
       URL'si (Öntanımlı olarak https://sponsor.ajay.app)
     Enable SponsorBlock: SponsorBlock'u Etkinleştir
     SponsorBlock Settings: SponsorBlock Ayarları
+    Skip Options:
+      Skip Option: Atlama Seçeneği
+      Auto Skip: Otomatik Atla
+      Show In Seek Bar: Arama Çubuğunda Göster
+      Prompt To Skip: Atlamak İçin Sor
+      Do Nothing: Hiçbir Şey Yapma
+    Category Color: Kategori Rengi
   External Player Settings:
     Custom External Player Arguments: Özel Harici Oynatıcı Argümanları
     Custom External Player Executable: Özel Harici Oynatıcı Çalıştırılabilir Dosyası
@@ -374,6 +403,14 @@ Settings:
     Choose Path: Yol Seç
     Ask Download Path: İndirme yolu için sor
     Download Settings: İndirme Ayarları
+    Download Behavior: İndirme Davranışı
+    Download in app: Uygulamada indir
+    Open in web browser: Web tarayıcısında aç
+  Parental Control Settings:
+    Parental Control Settings: Ebeveyn Denetimi Ayarları
+    Show Family Friendly Only: Yalnızca Aileye Uygun Olanları Göster
+    Hide Unsubscribe Button: Abonelikten Çık Düğmesini Gizle
+    Hide Search Bar: Arama Çubuğunu Gizle
 About:
   #On About page
   About: 'Hakkında'
@@ -601,12 +638,14 @@ Video:
   Save Video: Videoyu Kaydet
   translated from English: İngilizceden çevrildi
   Sponsor Block category:
-    music offtopic: müzik konu dışı
-    interaction: etkileşim
-    self-promotion: kendini tanıtma
-    outro: çıkış
-    intro: giriş
-    sponsor: sponsor
+    music offtopic: Müzik Konu Dışı
+    interaction: Etkileşim
+    self-promotion: Kendini Tanıtma
+    outro: Çıkış
+    intro: Giriş
+    sponsor: Sponsor
+    recap: Özet
+    filler: Dolgu
   Skipped segment: Atlanan bölüm
   External Player:
     Unsupported Actions:
@@ -718,6 +757,7 @@ Comments:
   From $channelName: $channelName'den
   And others: ve diğerleri
   Pinned by: Sabitleyen
+  Member: Üye
 Up Next: 'Sonraki'
 
 # Toast Messages
@@ -822,3 +862,11 @@ Downloading has completed: '"$" indirme işlemi tamamlandı'
 Downloading failed: '"$" indirilirken bir sorun oluştu'
 Download folder does not exist: İndirme dizini "$" mevcut değil. "Klasör sor" moduna
   geri dönülüyor.
+Screenshot Success: Ekran görüntüsü "$" olarak kaydedildi
+Screenshot Error: Ekran görüntüsü başarısız oldu. $
+New Window: Yeni Pencere
+Age Restricted:
+  This $contentType is age restricted: Bu $ yaş kısıtlamalıdır
+  Type:
+    Channel: Kanal
+    Video: Video
